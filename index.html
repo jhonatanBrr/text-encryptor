@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="input-content">
+            <img class="logo" src="./assets/logo.svg" alt="">
+            <textarea name="" id="inputText" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="flex-class">
+                <img src="./assets/info.svg" alt="">
+                <p class="alert">Solo se aceptan letras minúsculas sin acento ni caracteres especiales.</p>
+            </div>
+
+            <div class="content-buttons">
+                <button class="button button__primary" onclick="encriptar()">Encriptar</button>
+                <button class="button button__secondary" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output" id="output">
+            <p id="outputText"></p>
+            <button onclick="copyText()" class="button button__secondary button__secondary--copy">Copiar</button>
+        </div>
+        <div class="output output__empty" id="emptyOutput">
+            <img src="./assets/person.svg" alt="">
+            <p class="output_Title">Ningún mensaje fue encontrado</p>
+            <p class="output_description">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </main>
+    <!-- <footer></footer> -->
+     <script src="logic.js"></script>
+
+</body>
+
+</html>
